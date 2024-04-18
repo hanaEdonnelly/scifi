@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+  background: linear-gradient(to bottom, #000000, #6F31F4);
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  text-align: center;
+  &:after {
+    content: "";
+    display: block;
+    width: 60%;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 100;
+  color: #fff;
+  font-family: "Sometype Mono", monospace;
+  font-family: "Sometype Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  left: 100px;
+  top: 15%;
+  width: 1px;
+  height: 80%;
+  background: rgba(70, 76, 99, 1);
+  .bar {
+    position: absolute;
+    width: 1px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+
+.container {
+  padding-left: 200px;
+}
+
+section {
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Montserrat";
+  margin-right: 10px;
+}
+
+p {
+  text-align: right;
+  line-height: 2;
+  font-family: "Sometype Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.node {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #FFF;
+  left: -5px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 3px;
+  &:hover {
+    background: #46ffdd;
+    span {
+      opacity: 1;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: -3px;
+    top: -3px;
+  }
+  span {
+    transition: all .4s ease-out;
+    text-transform: uppercase;
+    right: 4px;
+    top: -16px;
+    color: #FFFFFF;
+    position: absolute;
+    padding: 10px;
+    white-space: nowrap;
+    font-size: 10px;
+    font-weight: 200;
+    font-family: "Montserrat";
+    opacity: 0;
+  }
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+}
