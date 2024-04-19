@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body {
   background: linear-gradient(to bottom, #000000, #6F31F4);
   padding: 0;
@@ -8,7 +14,6 @@ body {
 }
 
 h1 {
-  font-size: 56px;
   font-weight: 400;
   color: #fff;
   font-family: "Gravitas One", serif;
@@ -43,7 +48,7 @@ img {
   list-style: none;
   position: fixed;
   left: 100px;
-  top: 15%;
+  top: 5%;
   width: 1px;
   height: 80%;
   background: rgba(70, 76, 99, 1);
@@ -122,6 +127,47 @@ p {
 }
 
 .columns {
+  
+  min-height: 1vh;
+}
+
+.header {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.rows {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul * {
+  padding: 3px
+}
+
+li {
+  font-size: 8pt;
+  border-radius: 25%;
+  border-width: 2px;
+  border: #fff solid;
+}
+
+.pg-height * {
+  min-height: 1vh;
+}
+
+#scroll-down {
+  margin-top: 300px;
+}
+
+#header{
+  padding-top: 50px;
 }
