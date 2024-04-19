@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-<body>
-    <div class="columns">
-        <div class="header" id="header">
-            <div class="progress-container">
-                <div class="progress-bar" id="myBar"></div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="frame">
-                <div class="columns">
-                    <h1 class="center" style="padding-top: 40px;">what good is sci-fi?</h1>
-                    <h2 class="center">a virtual exhibit on tech & morality</h2>
-                    <a href="#" onclick="scrollToFrame3()"><p class="center" style="margin-top: 30vh;">click to scroll down</p>
-                    <p class="center">⬇️</p></a>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sci-Fi Exhibit</title>
+    </head>
+    <body>
+        <div class="columns">
+            <div class="header" id="header">
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
                 </div>
-                
             </div>
-            <div class="frame" id="frame2" style="min-height: 15vh;">
-                <p> </p>
-            </div>
-            <div class="frame" id="frame3">
-                <h2>why is AI so scary?</h2>
-                <h2>will robots take over the world?</h2>
-                <h2>are we doomed?</h2>
-                <p class="right">maybe.</p>
-                <p>many SF (science fiction) works seem to think no, though.</p>
+            <div class="content">
+                <div class="frame">
+                    <div class="columns">
+                        <h1 class="center" style="padding-top: 40px;">what good is sci-fi?</h1>
+                        <h2 class="center">a virtual exhibit on tech & morality</h2>
+                        <a href="#" onclick="scrollToFrame3()"><p class="center">click to scroll down</p>
+                        <p class="center">⬇️</p></a>
+                    </div>
+                </div>
+                <div class="frame" id="frame2" style="min-height: 15vh;">
+                    <p> </p>
+                </div>
+                <div class="frame" id="frame3">
+                    <h2>why is AI so scary?</h2>
+                    <h2>will robots take over the world?</h2>
+                    <h2>are we doomed?</h2>
+                    <p class="right">maybe.</p>
+                    <p>many SF (science fiction) works seem to think no, though.</p>
+                </div>
             </div>
         </div>
-    </div>
-    <!--script src="sticky.js"></script-->
-    <script src="scroll.js"></script>
-    <script>
-        function scrollToFrame3() {
-            const targetElement = document.getElementById('frame3');
-            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-
-            // Smoothly scroll to the target position
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
-    </script>
-</body>
+        <!--script src="sticky.js"></script-->
+        <script src="scroll.js"></script>
+        <script>
+            function scrollToFrame3() {
+                const targetElement = document.getElementById('frame3');
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+    
+                // Smoothly scroll to the target position
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+    </body>
+</html>
