@@ -81,7 +81,6 @@ h1 {
   text-wrap: pretty;
 }
 h2 {
-  font-size: 36px;
   font-weight: 100;
   color: #fff;
   font-family: "Sometype Mono", monospace;
@@ -90,7 +89,6 @@ h2 {
   text-wrap: pretty;
 }
 p {
-  text-align: right;
   line-height: 2;
   font-family: "Sometype Mono", monospace;
   font-optical-sizing: auto;
@@ -112,7 +110,6 @@ p {
 }
 /* Style the header */
 .header {
-  background: #000;
   color: #f1f1f1;
   padding-top: 15px 0;
 }
@@ -143,5 +140,16 @@ p {
   width: 0%;
 }
 .frame {
-  min-height: 100vh;
+  min-height: 75vh;
+  padding-top: 1px;
+}
+.right {
+  text-align: right;
+}
+a {
+  color: #fff;
+}
+.down-arrow {
+  text-align: center;
+  margin: auto;
 }

@@ -15,15 +15,44 @@
         </div>
         <div class="content">
             <div class="frame">
-                <p class="center">a virtual exhibit on tech & morality</p>
-                <p class="center" style="margin-top: 50vh;">scroll down</p>
-                <p class="center">⬇️</p>
+                <h2 class="center">a virtual exhibit on tech & morality</h2>
+                <a onclick="scrollToFrame2()"><p class="center" style="margin-top: 50vh;">click to scroll down</p>
+                <p class="center">⬇️</p></a>
             </div>
-            <div class="frame">
-                <p>Hi</p>
+            <div class="frame" id="frame2">
+                <h2>why is AI so scary?</h2>
+                <h2>will robots take over the world?</h2>
+                <h2>are we doomed?</h2>
+                <p class="right">maybe.</p>
+            </div>
+            <div class="frame" id="frame3">
+                <p>sci-fi (SF) says yes and no to doom.</p>
+                <p></p>
             </div>
         </div>
     </div>
-    <script src="sticky.js"></script>
+    <!--script src="sticky.js"></script-->
     <script src="scroll.js"></script>
+    <script>
+        function scrollToFrame2() {
+            const targetElement = document.getElementById('frame2');
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+            // Smoothly scroll to the target position
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+        function scrollToFrame3() {
+            const targetElement = document.getElementById('frame3');
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+            // Smoothly scroll to the target position
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
