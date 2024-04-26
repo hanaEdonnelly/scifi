@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Gravitas One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gravitasone/v19/5h1diZ4hJ3cblKy3LWakKQmaDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sometype Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sometypemono/v1/70lEu745KGk_R3uxyq0WrROhKpG7T0e3JvPLoiXEW6cZiwQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sometype Mono';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sometypemono/v1/70lEu745KGk_R3uxyq0WrROhKpG7T0e3JvPLoiXEW5UZiwQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sometype Mono';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sometypemono/v1/70lEu745KGk_R3uxyq0WrROhKpG7T0e3JvPLoiXEW3keiwQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sometype Mono';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sometypemono/v1/70lEu745KGk_R3uxyq0WrROhKpG7T0e3JvPLoiXEW0AeiwQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sometype Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sometypemono/v1/70lGu745KGk_R3uxyq0WrROhAJiJsJ_eTWllpTAMGE9a.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sometype Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sometypemono/v1/70lGu745KGk_R3uxyq0WrROhAJiJsJ_eTWllpTA-GE9a.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sometype Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sometypemono/v1/70lGu745KGk_R3uxyq0WrROhAJiJsJ_eTWllpTDSH09a.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sometype Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sometypemono/v1/70lGu745KGk_R3uxyq0WrROhAJiJsJ_eTWllpTDrH09a.ttf) format('truetype');
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(to bottom, #000000, #6F31F4);
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+/*.stars {
+    background-image: url('stars.png');
+    background-repeat: repeat;
+    background-size: 325%;
+    background-attachment: fixed;
+}*/
+h1 {
+  color: #fff;
+  font-family: "Gravitas One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-wrap: pretty;
+}
+h2 {
+  font-weight: 100;
+  color: #fff;
+  font-family: "Sometype Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-wrap: pretty;
+}
+p {
+  line-height: 2;
+  font-family: "Sometype Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-wrap: pretty;
+}
+button {
+  font-size: 12pt;
+}
+.frame {
+  min-height: 100vh;
+  padding: 10px 20px;
+}
+.centered {
+  margin: auto;
+  text-align: center;
+}
+#topbutton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
